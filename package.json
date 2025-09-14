@@ -9,6 +9,7 @@
     "format": "prettier --write .",
     "metadata": "node scripts/generateMetadata.js",
     "build": "pnpm -F core run build && pnpm -F server run build && pnpm -F frontend run build",
+    "build:frontend": "pnpm -F frontend run build",
     "build:watch": "tsc --build --watch",
     "start": "node packages/server/dist/server",
     "start:addon": "pnpm run start",
